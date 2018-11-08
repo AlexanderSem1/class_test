@@ -1,0 +1,509 @@
+*{
+    box-sizing: border-box; 
+    margin: 0 auto; 
+}
+
+body{
+    color: white; 
+    font-family: 'Lato', sans-serif;
+ 
+}
+
+#homeBG{
+    background-image: url(images/SM_Sun-bike.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.RestBG{
+    background: linear-gradient(to left, #34e89e, #0f3443);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+a{
+    text-decoration: none; 
+    color: white;
+}
+
+.navbar li{
+    list-style-type: none; 
+    padding: 4px 8px;
+    text-align: right;
+    font-size: 1.3em; 
+    border-radius: 3px; 
+}
+
+.nav-wrapper .navbar li:hover{
+    background:  linear-gradient(to left, #34e89e, #0f3443);
+}
+
+
+
+.navbar{
+    margin: 10px; 
+    position: absolute; 
+    display:none;  
+}
+.nav-wrapper{
+    display: inline;
+    position: relative; 
+    }
+
+.nav-wrapper:hover .navbar{
+    display: inline;    
+    visibility: visible; 
+    }
+
+.nav-wrapper:hover .nav-icon{
+    display: none;
+}
+
+
+.name-logo{
+    float: left;
+    margin: 25px 30px;
+     padding: 10px;
+    font-size: 2em; 
+}
+
+.nav-icon{
+    float: right; 
+    color: white; 
+    background: none; 
+    font-size: 1.5em;   
+    text-align: right; 
+    border: none; 
+    padding: 10px;
+    margin: 30px 15px; 
+}
+
+.wrapper{
+    clear:both; 
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.hero-text{
+    grid-column: 2/6; 
+    grid-row: 2; 
+    font-size: 1.1em; 
+    text-align: center; 
+    margin:50px 0 50px; 
+}
+
+.route{
+    grid-column: 3/5; 
+    grid-row: 4;
+    text-align: center; 
+    padding: 1px; 
+    border-radius: 4px; 
+    background: linear-gradient(to left, #34e89e, #0f3443);
+    font-size: 1.5em;
+    margin: 10px 0 100px; 
+}
+
+.stars{
+    grid-column: 1/7; 
+    grid-row: 3;
+    text-align: center; 
+}
+
+footer{
+    grid-column: 1/7; 
+    grid-row: 10;
+    text-align: center; 
+    font-size: 0.8em; 
+    padding: 20px; 
+}
+
+.wrapper .line-hr{
+    padding: 0px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+/** Styling av Tours page**/
+
+
+.tour-wrapper{
+    clear:both; 
+    text-align: center; 
+}
+
+#tours{
+    font-size: 1.7em;
+    margin: 40px 0 30px;
+    padding: 25px 0;
+}
+
+#tour_text{
+    grid-column: 1/7;
+    grid-row: 2;
+    padding: 10px 50px 30px;
+}
+
+.city{
+    padding: 1px;
+    border: 4px solid white;
+    margin-bottom: 10px;
+}
+
+.tour_t{
+    margin: 100px 0 20px; 
+}
+
+iframe:hover{
+    transform:scale(1.1); 
+}
+
+
+.textdeco1{
+    padding: 0px 50px 10px;
+    font-size: 0.95em;
+}
+
+hr{
+    width: 30%;
+}
+/*
+
+/** Styling av About page ***/
+
+
+
+.about-wrapper{
+    clear:both; 
+    text-align: center; 
+}
+
+
+.about-wrapper .textbody{
+    font-size: 1.0em;
+    margin: 15px 10px;
+    padding: 20px 10px 10px; 
+}
+
+.brothers img{
+    border: 4px groove white; 
+    
+}
+
+.brothers img:hover{
+    opacity: 0.6; 
+}
+
+.profile-images img{
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-top: 100px; 
+}
+
+.profile-images img:hover{
+    opacity: 0.5; 
+    transform:scale(1.3); 
+}
+
+.about-intro{
+    padding: 20px 30px 10px; 
+    margin: 20px 0 10px;
+}
+
+.about-text{
+    padding: 20px 30px 10px; 
+    margin: 10px 35px 0;
+}
+
+
+
+
+
+
+
+
+
+/** Styling av contact page ***/
+
+.contact_wrapper{
+    clear:both; 
+    text-align: center; 
+}
+
+.contact_wrapper #city5{
+    margin:40px 0 40px; 
+}
+
+.social{
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.find-us-h3{
+    padding: 30px; 
+}
+
+.contact_wrapper #contac-social-wrapper{
+    margin: 50px 0 40px; 
+}
+
+#mail, .fa-phone{
+    padding:15px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/** Style for 768px and bigger **/
+
+@media only screen and (min-width: 768px){
+    
+    
+/** styling av home for web **/    
+    body{
+        width: 70%; 
+        
+    }
+    
+    #homeBG{
+    background-image: url(images/WS_Field-bike.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    }
+    
+    .nav-icon{
+        display: none; 
+    }
+    
+    .top-bar .nav-wrapper .navbar{
+        display: inline;  
+        position: relative;
+    }
+    
+    .nav-wrapper .navbar li{
+        display: inline; 
+        float: right;
+        margin-top: 45px;
+        font-size: 1.8vw;
+    }
+    
+    .hero-text{
+        grid-column: 1/7;
+        font-size: 2em; 
+        padding: 40px;
+        margin-top: 20%;
+    }
+    
+    .stars img{
+        width: 19%; 
+    }
+    
+    .route{
+    padding: 20px; 
+    font-size: 3.0em;
+    margin:80px 0 140px;
+    }
+    
+    .wrapper .route:hover{
+        background: linear-gradient(to right, #34e89e, #0f3443);
+    }
+    
+    .name-logo{
+        font-size: 2.5em; 
+    }
+    
+    
+    footer{
+    grid-column: 1/8; 
+    grid-row: 10;
+    text-align: center; 
+    font-size: 0.8em; 
+    padding: 20px; 
+}
+
+    
+    
+    
+    
+    
+    
+    /** styling av About us for web **/    
+    
+    .about-wrapper{
+        clear:both; 
+        display:grid; 
+        grid-template-columns: repeat(7, 1fr); 
+    }
+    
+    .about-wrapper .About-us-intro-box{
+        grid-column: 2/7;
+        grid-row: 2;
+    }
+    
+    .about-wrapper .about-box1{
+        grid-column: 2/4; 
+        grid-row:3; 
+         
+    }
+    
+    .about-wrapper .about-box2{
+        grid-column: 5/7; 
+        grid-row:3; 
+    }
+    
+    .about-box3{
+        grid-column: 2/4; 
+        grid-row:4; 
+    }
+    
+    .about-box4{
+        grid-column: 5/7; 
+        grid-row:4; 
+    }
+    
+    
+    
+    hr{
+        width: 20%;
+    
+    }
+    .brothers img{
+        width: 70%;
+    }
+    
+    #tours{
+        font-size: 2.6vw;
+        margin: 0; 
+    }
+    
+    .about-wrapper .textbody{
+        font-size: 1.5vw; 
+        padding:0 15px; 
+    }
+    
+    
+    .profile-images img{
+        width: 50%;
+        margin-top: 100px;
+    }
+    
+    .about-intro, .about-text{
+        font-size: 1.1vw; 
+        padding:10px 0 10px;
+        margin: 0; 
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    /** styling av Tours for web **/   
+
+    .tour-wrapper{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    }
+    .
+    .city{
+        width: 70%;
+        margin-bottom: 100px; 
+    }
+    
+   #tours{
+        grid-column: 1/8; 
+        grid-row:1; 
+    }
+    
+
+    #tour_text{
+        grid-column: 1/8;
+        grid-row: 2; 
+        padding: 10px;
+        font-size: 1.5vw; 
+    }
+    
+    .tour_t{
+        margin: 60px 0 20px; 
+        font-size: 1.4vw; 
+    }
+    
+    #tour-box1{
+        grid-column: 2/4; 
+        grid-row:3; 
+         
+    }
+    
+    #tour-box2{
+        grid-column: 5/7; 
+        grid-row:3; 
+    }
+    
+    #tour-box3{
+        grid-column: 2/4; 
+        grid-row:4; 
+    }
+    
+    #tour-box4{
+        grid-column: 5/7; 
+        grid-row:4; 
+    }
+    
+    .tour-wrapper .textdeco1{
+        padding:20px; 
+        font-size: 1.1vw; 
+        
+    }
+    
+
+    
+    
+    
+    
+    
+    /** styling av Contacts for web **/   
+    
+
+    
+    .contact_wrapper .city{
+        margin-bottom: 0; 
+        width: 60%; 
+    }
+    
+    .find-us-h3{
+        font-size: 2vw; 
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
